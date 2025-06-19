@@ -115,6 +115,7 @@ func main() {
 	flag.StringVar(&dbName, "database", "freightcms", "Name of the database to use when connecting. Defaults to freightcms")
 	flag.StringVar(&collectionName, "collection", "people", "Name of the collection in mongodb to use when connecting. Defaults to 'people'")
 	flag.StringVar(&allowedHosts, "allowedHosts", "localhost:8080", "Comma separated list of hostname that are allowed to communicate with service")
+	flag.Parse()
 
 	ctx := context.Background()
 
